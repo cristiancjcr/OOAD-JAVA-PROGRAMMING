@@ -3,9 +3,11 @@ Why do Java developers wear glasses?
 Because they can't C#! 😄
 
 
+
 Homework.Java-1.3. Suprascrieți toString() dintr-o clasă astfel încât să returneze toate atributele clasei, într-un format custom.
 
 Homework.Java-1.4. (Opțional) Implementați/Extindeți interfața Animal din Exemplul 1.7 într-o altă interfață, o clasă abstractă respectiv o clasă. Apelați toate metodele.
+
 Homework.Java-1.6. Proiectați diagramele UML si scrieți cod/eventual metode stub pentru Clasele Persoană, Adresă, Profesor, Student, Curs și următoarele metode: 
 addStudentToCourse, removeStudentFromCourse, addTeacherToCourse, RemoveTeacherFromCourse, changeTeacherAddress, ChangeStudentAddress, createNewCourse from list of students and teacher.
 
