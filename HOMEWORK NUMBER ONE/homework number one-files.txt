@@ -13,7 +13,9 @@ Homework.Java-1.7. Proiectați diagramele UML si scrieți cod/eventual metode st
 Acțiuni: move Employee to another company. add employees to company. display addresses of all employees working for a company at certain address. find a company by name and list all employees
 
 Homework.Java-1.8. Design classes to reflect relations between: Person, Tourist, Hotel, Address, City. 
-Implement the following actions: change address for a Hotel/Person/Tourist, Tourist moves to another Hotel, get all hotels in a city, display all tourists in a city hotels, is a person accommodated in some city hotels ? display all persons and tourists
+Implement the following actions: 
+change address for a Hotel/Person/Tourist, Tourist moves to another Hotel, get all hotels in a city, display all tourists in a city hotels, is a person accommodated in some city hotels ?
+display all persons and tourists
 
 Homework.Java-1.11. Scrieți codul aferent următoarelor clase și generați o diagramă UML corespunzătoare.
 Creați o interfață Shape (atribut culoare și metodă getPerimetru). Extindeți interfața la clasa abstractă Shape2D (metodă abstractă getAria) respectiv Shape3D (metodă abstractă getVolum). 
