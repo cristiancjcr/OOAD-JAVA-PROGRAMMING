@@ -1,3 +1,26 @@
 Why do Java developers wear glasses?
 
 Because they can't C#! 😄
+
+
+Homework.Java-1.3. Suprascrieți toString() dintr-o clasă astfel încât să returneze toate atributele clasei, într-un format custom.
+
+Homework.Java-1.4. (Opțional) Implementați/Extindeți interfața Animal din Exemplul 1.7 într-o altă interfață, o clasă abstractă respectiv o clasă. Apelați toate metodele.
+Homework.Java-1.6. Proiectați diagramele UML si scrieți cod/eventual metode stub pentru Clasele Persoană, Adresă, Profesor, Student, Curs și următoarele metode: addStudentToCourse, removeStudentFromCourse, addTeacherToCourse, RemoveTeacherFromCourse, changeTeacherAddress, ChangeStudentAddress, createNewCourse from list of students and teacher.
+
+Homework.Java-1.7. Proiectați diagramele UML si scrieți cod/eventual metode stub pentru Clasele Persoană, Companie, Angajat, Adresă. Acțiuni: move Employee to another company. add employees to company. display addresses of all employees working for a company at certain address. find a company by name and list all employees
+
+Homework.Java-1.8. Design classes to reflect relations between: Person, Tourist, Hotel, Address, City. Implement the following actions: change address for a Hotel/Person/Tourist, Tourist moves to another Hotel, get all hotels in a city, display all tourists in a city hotels, is a person accommodated in some city hotels ? display all persons and tourists
+
+Homework.Java-1.11. Scrieți codul aferent următoarelor clase și generați o diagramă UML corespunzătoare.
+Creați o interfață Shape (atribut culoare și metodă getPerimetru). Extindeți interfața la clasa abstractă Shape2D (metodă abstractă getAria) respectiv Shape3D (metodă abstractă getVolum). Implementați Shape în clasa segmentDeDreapta (un segment de dreaptă din geometrie). Extindeți Shape2D și Shape3D la pătrat, cerc respectiv sferă și cub. Efectuați modificările necesare elementelor claselor pentru a afișa:
+1. Lungimea segmentului de dreaptă
+2. Considerând o listă în care se află pătrate si cercuri, calculați perimetrul lor
+3. Considerând o listă în care se află pătrate si cercuri, sfere și cuburi, calculați aria lor
+4. Considerând o listă în care se află sfere și cuburi, calculați volumul lor
+
+Homework.Java-1.13. Citiți un număr x dintr-un fișier și calculați valoarea 2*x. Pentru orice eroare posibilă, x are valoarea implicită 1. Afișati valoarea calculată. Organizați codul folosind excepții, metode, clase.
+
+Homework.Java-1.14. Modificați Exemplul 1.14 astfel încât utilizatorul să repete citirea unei valori numerice până aceasta este număr întreg.
+
+Homework.Java-1.16. Rezolvați ecuația ax+b=0 în toate cazurile folosind clase, null, Exceptii, Excepții Custom. (Opțional) Folosiți Optional 😊
