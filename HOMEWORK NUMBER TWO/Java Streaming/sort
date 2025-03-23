@@ -1,0 +1,22 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamSortExample {
+    public static void main(String[] args) {
+        // Creăm o listă de cuvinte
+        List<String> words = Arrays.asList("banana", "apple", "cherry", "date");
+
+        // Folosim sort pentru a sorta cuvintele în ordine alfabetică
+        List<String> sortedWords = words.stream()
+                                        .sorted()  // Sortează în ordine alfabetică
+                                        .collect(Collectors.toList());
+
+        // Afișăm rezultatul
+        System.out.println("Cuvinte sortate: " + sortedWords);
+    }
+}
+
+
+Ieșire :
+Cuvinte sortate: [apple, banana, cherry, date]
