@@ -21,3 +21,4 @@ public class SegmentDeDreapta implements Shape {
         return lungime;
     }
 }
+
