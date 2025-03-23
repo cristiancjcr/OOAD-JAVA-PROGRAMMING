@@ -16,3 +16,7 @@ public class StreamMapExample {
         System.out.println("Pătratele numerelor: " + squares);
     }
 }
+
+
+Ieșire :
+Pătratele numerelor: [1, 4, 9, 16, 25]
