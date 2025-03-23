@@ -1,0 +1,18 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamMapExample {
+    public static void main(String[] args) {
+        // Creăm o listă de numere întregi
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+        // Folosim map pentru a calcula pătratele numerelor
+        List<Integer> squares = numbers.stream()
+                                       .map(n -> n * n)  // Transformăm fiecare număr în pătratul său
+                                       .collect(Collectors.toList());
+
+        // Afișăm rezultatul
+        System.out.println("Pătratele numerelor: " + squares);
+    }
+}
