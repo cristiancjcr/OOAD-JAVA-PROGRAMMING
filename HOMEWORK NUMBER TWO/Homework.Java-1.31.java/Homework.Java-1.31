@@ -1,0 +1,34 @@
+Pentru a genera 3 numere aleatoare și a le scrie în fișiere diferite folosind Thread-uri, vom crea un program în Java care folosește concurența pentru a scrie fiecare număr aleatoriu într-un fișier separat. 
+Vom folosi clasele Thread și Runnable pentru a implementa multithreading.
+
+În plus, vom discuta și despre gestionarea unui număr oarecare de numere aleatoare folosind aceleași tehnici.
+
+
+Plan:
+Vom crea o clasă care să genereze un număr aleator și să-l scrie într-un fișier.
+Vom folosi un Thread pentru fiecare număr aleatoriu pentru a-l scrie într-un fișier diferit.
+Vom generaliza programul astfel încât să poată gestiona un număr oarecare de numere aleatoare.
+
+
+Explicație:
+
+RandomNumberWriter:
+Clasa RandomNumberWriter implementează Runnable și scrie un număr aleatoriu într-un fișier specificat.
+Folosim Random pentru a genera numere aleatoare și BufferedWriter pentru a scrie în fișier.
+
+Main:
+În clasa principală, generăm un număr de fișiere și creăm câte un Thread pentru fiecare număr aleatoriu.
+Fiecare thread va apela metoda run() din RandomNumberWriter, care scrie numărul aleatoriu într-un fișier diferit.
+
+
+Gestionarea unui număr oarecare de numere aleatoare
+Pentru a gestiona un număr oarecare de numere aleatoare, putem introduce o variabilă care specifică câte fișiere dorim să generăm, iar apoi să iterăm în funcție de acest număr. 
+De asemenea, numele fișierelor vor fi dinamice pentru a reflecta numărul fiecărui fișier.
+
+
+Ieșirea așteptată
+Dacă rulăm programul cu numereDeGenerat = 3, ar trebui să avem 3 fișiere, fiecare conținând un număr aleatoriu diferit. 
+Ieșirea poate arăta așa:
+Numărul 42 a fost scris în fișierul: numar_1.txt
+Numărul 73 a fost scris în fișierul: numar_2.txt
+Numărul 11 a fost scris în fișierul: numar_3.txt
