@@ -38,4 +38,3 @@ Concluzie :
 În acest exemplu, am folosit Java Reflection pentru a inspecta câmpurile și metodele unei clase (Person), pentru a invoca metode și a modifica câmpuri private dinamic. 
 Reflection este utilă în cazuri în care nu cunoști clasele sau metodele la timpul compilării, ci doar la timpul execuției. 
 Este folosită frecvent în framework-uri și librării pentru a adăuga flexibilitate și pentru a facilita interacțiunea cu obiectele într-un mod dinamic.
-
