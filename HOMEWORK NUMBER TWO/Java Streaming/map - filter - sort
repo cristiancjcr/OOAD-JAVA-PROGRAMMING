@@ -1,0 +1,23 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamMapFilterSortExample {
+    public static void main(String[] args) {
+        // Creăm o listă de cuvinte
+        List<String> words = Arrays.asList("apple", "banana", "kiwi", "grapefruit", "date");
+
+        // Combinăm map, filter și sort într-un singur stream
+        List<String> processedWords = words.stream()
+                                           .filter(word -> word.length() > 5)  // Păstrăm doar cuvintele cu mai mult de 5 caractere
+                                           .map(String::toUpperCase)  // Transformăm cuvintele în uppercase
+                                           .sorted((word1, word2) -> word2.compareTo(word1))  // Sortăm în ordine descrescătoare
+                                           .collect(Collectors.toList());
+
+        // Afișăm rezultatul
+        System.out.println("Cuvinte procesate: " + processedWords);
+    }
+}
+
+Ieșire :
+Cuvinte procesate: [GRAPEFRUIT, BANANA]
