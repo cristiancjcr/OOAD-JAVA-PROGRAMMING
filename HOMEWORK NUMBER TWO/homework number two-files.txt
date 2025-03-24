@@ -30,4 +30,3 @@ Homework.Java-1.32.
 Creați o listă de string. Folosind stream, filtrați-o și păstrați de string-urile care încep cu “a”, map-ați la uppercase, 
 sortați lista crescător sau descrescător apoi afișați rezultatul. 
 Totul folosind operatorul.
-
