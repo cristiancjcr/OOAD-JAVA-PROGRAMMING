@@ -3,7 +3,7 @@
 
 Când se folosește 'Singleton' ?
 
-Singleton este util atunci când avem resurse partajate care trebuie să existe într-o singură instanță în cadrul unei aplicații, cum ar fi:
+'Singleton' este util atunci când avem resurse partajate care trebuie să existe într-o singură instanță în cadrul unei aplicații, cum ar fi:
 ✅ Conexiuni la baze de date – evităm crearea de instanțe multiple costisitoare.
 ✅ Gestionarea configurărilor – o singură instanță care reține setările aplicației.
 ✅ Logger – toate clasele folosesc același mecanism de logare.
@@ -11,7 +11,7 @@ Singleton este util atunci când avem resurse partajate care trebuie să existe 
 
 
 
-1. Singleton folosind 'Enum' (cea mai sigură metodă)
+1. 'Singleton' folosind 'Enum' (cea mai sigură metodă)
 ✅ Este thread-safe implicit.
 ✅ Evită problemele legate de serializare și reflecție.
 
@@ -19,20 +19,20 @@ De ce e așa de puternic ? 'Enums' în Java sunt garantate de 'JVM - Java Virtua
 
 
 
-2. Problema 'Reflecției' în Singleton (și cum să o evităm)
+2. Problema 'Reflecției' în 'Singleton' (și cum să o evităm)
 🔴 Chiar dacă Singleton are un constructor privat, 'Java Reflection API' îl poate sparge !
 🔹 Soluție: Aruncă o excepție în constructorul privat dacă există deja o instanță.
 
 
 
-3. Singleton în 'Spring Framework'
-În Spring, beans-urile sunt singleton implicit.
-👉 Spring se ocupă de gestionarea instanței, deci nu trebuie să implementăm Singleton manual.
-În Spring Framework, un bean este o componentă reutilizabilă a aplicației, creată și administrată automat de Spring.
+3. 'Singleton' în 'Spring Framework'
+În 'Spring', beans-urile sunt singleton implicit.
+👉 'Spring' se ocupă de gestionarea instanței, deci nu trebuie să implementăm 'Singleton' manual.
+În 'Spring Framework', un bean este o componentă reutilizabilă a aplicației, creată și administrată automat de 'Spring'.
 
 
 
 Concluzie :
-✔ Singleton este util pentru resurse partajate.
+✔ 'Singleton' este util pentru resurse partajate.
 ✔ Implementarea simplă NU este thread-safe.
-✔ Enum Singleton este cea mai sigură metodă.
+✔ 'Enum Singleton' este cea mai sigură metodă.
