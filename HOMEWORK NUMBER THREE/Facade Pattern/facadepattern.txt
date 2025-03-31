@@ -18,3 +18,4 @@ Concluzie :
 ✔ 'Facade Pattern' ascunde complexitatea unui sistem și oferă o interfață simplificată.
 ✔ Se folosește pentru sisteme complexe (ex: baze de date, API-uri, multimedia, interacțiuni hardware).
 ✔ Crește modularitatea -> codul devine mai ușor de întreținut.
+
