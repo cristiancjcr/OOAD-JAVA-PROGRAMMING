@@ -24,3 +24,4 @@ Concluzie :
 Adapter Pattern ajută la compatibilitatea între clase cu interfețe diferite.
 ✔ Se folosește în aplicații unde trebuie să lucrăm cu cod existent, fără a-l modifica.
 ✔ Un exemplu real este conversia driverelor hardware pentru a fi compatibile cu un sistem de operare diferit.
+
