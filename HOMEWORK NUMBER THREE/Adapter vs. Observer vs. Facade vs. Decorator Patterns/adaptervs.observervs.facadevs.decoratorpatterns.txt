@@ -1,1 +1,105 @@
+Aceste patru design patterns fac parte din categoriile structural și comportamental și sunt folosite pentru a îmbunătăți flexibilitatea și reutilizarea codului.
 
+
+
+Introducere :
+'Adapter' - structural : Transformă o interfață existentă într-una compatibilă cu clasa noastră
+
+'Observer' - comportamental : Permite ca mai multe obiecte să fie notificate automat la schimbarea unui obiect central
+
+'Facade' - structural : Simplifică interacțiunea cu un sistem complex oferind o interfață unificată
+
+'Decorator' - structural : Adaugă dinamic noi funcționalități unui obiect, fără a-i modifica structura
+
+
+
+Scop & Utilizare :
+'Adapter' : Face ca două clase incompatibile să funcționeze împreună
+- Când avem o librărie/ API vechi care nu este compatibil cu codul nostru
+- Când vrem să reutilizăm o clasă existentă, dar interfața nu se potrivește
+
+'Observer' : Creează o relație de tipul "Publisher-Subscriber"
+- Când avem nevoie de notificări în timp real (ex: notificări push, UI event listeners)
+- Când mai multe obiecte trebuie să reacționeze la schimbările unui obiect principal
+
+'Facade' : Oferă o interfață simplificată către un sistem complex
+- Când vrem să ascundem detaliile implementării unui subsistem complex
+- Când dorim să separăm nivelurile arhitecturii (ex: UI <-> Business Logic <-> Database)
+
+'Decorator' : Adaugă funcționalități suplimentare la un obiect fără a-i modifica structura
+- Când vrem să adăugăm caracteristici noi fără a schimba clasa originală
+- Când avem nevoie de o combinație flexibilă de caracteristici (ex: produse personalizabile, UI styling)
+
+
+
+Exemple reale : 
+'Adapter' :	Adaptor de priză - convertește un conector de tip european într-unul american
+'Observer' :	YouTube Subscription - utilizatorii sunt notificați automat când un canal postează un nou videoclip
+'Facade' :	Telecomandă TV - simplifică controlul unui sistem complex (TV, sound system, DVD player)
+'Decorator' :	Personalizare cafea - adăugăm ingrediente la cafea (lapte, zahăr, frișcă) fără a modifica clasa de bază
+
+
+
+Avantaje & Dezavantaje :
+'Adapter' -
+
+Avantaje : 
+✅ Permite reutilizarea codului existent
+✅ Separă implementarea de interfață
+
+Dezavantaje : 
+❌ Crește complexitatea codului
+❌ Poate introduce overhead dacă nu este folosit corect
+
+
+
+'Observer' -
+
+Avantaje : 
+✅ Scade dependența dintre obiecte
+✅ Asigură notificări în timp real
+
+Dezavantaje : 
+❌ Poate deveni greu de gestionat dacă sunt prea mulți observatori
+
+
+
+'Facade' - 
+
+Avantaje : 
+✅ Simplifică utilizarea unui sistem complex
+✅ Îmbunătățește separarea codului
+
+Dezavantaje : 
+❌ Nu oferă control granular asupra fiecărei componente
+❌ Dacă se modifică subsistemul, poate necesita schimbări majore
+
+
+
+'Decorator' - 
+Avantaje : 
+✅ Oferă o soluție flexibilă pentru extinderea funcționalității
+✅ Evită crearea unui număr mare de subclase
+
+Dezavantaje : 
+❌ Crește complexitatea codului
+❌ Obiectele decorate pot fi mai greu de înțeles și debug-uit
+
+
+
+Când să alegi fiecare pattern ?
+Ai o clasă veche care nu este compatibilă cu sistemul tău ? - 'Adapter'
+Vrei să implementezi un sistem de notificări ? - 'Observer'
+Ai un sistem complicat și vrei să-l faci mai ușor de utilizat ? - 'Facade'
+Vrei să adaugi funcționalități unui obiect fără a-i modifica codul ? - 'Decorator'
+
+
+
+Concluzie :
+'Adapter Pattern' - Transformă o interfață într-una compatibilă cu sistemul nostru.
+
+'Observer Pattern' - Permite mai multor obiecte să reacționeze automat la schimbările unui obiect central.
+
+'Facade Pattern' - Oferă o interfață mai simplă către un sistem complex.
+
+'Decorator Pattern' - Adaugă funcționalități la un obiect fără a-i modifica structura.
