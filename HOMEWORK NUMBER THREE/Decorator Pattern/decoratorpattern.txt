@@ -1,1 +1,26 @@
+'Decorator Pattern' este un design pattern structural care permite adăugarea dinamică de funcționalități unui obiect, fără a modifica clasa originală.
+În loc să creăm subclase multiple pentru fiecare variantă a unui obiect, folosim decoratori care își pot adăuga propriul comportament obiectului original.
 
+
+
+Când se folosește 'Decorator Pattern' ?
+
+✅ Când vrem să adăugăm noi funcționalități la un obiect fără a modifica codul inițial.
+✅ Când avem nevoie de o combinație flexibilă de funcționalități.
+
+Exemple reale :
+☕ Sistem de personalizare a unei cafele (ex: zahăr, lapte, frișcă etc.)
+🎮 Sistem de îmbunătățiri pentru un caracter dintr-un joc (ex: armură, puteri speciale)
+📜 Sistem de styling pentru text (ex: bold, italic, underline)
+
+
+
+Exemplu simplu: Cafenea (Adăugăm topping-uri la o cafea)
+Scenariu: Avem un sistem pentru o cafenea. O cafea simplă poate fi decorată cu diferite adaosuri (ex: lapte, zahăr, frișcă).
+
+
+
+Concluzie :
+✔ 'Decorator Pattern' permite extinderea funcționalității unui obiect fără a modifica clasa originală.
+✔ Este mai flexibil decât moștenirea, deoarece putem adăuga sau elimina decoratori dinamic.
+✔ Se folosește pentru personalizarea produselor, îmbunătățiri dinamice și interfețe grafice (ex: adăugarea de efecte la un text sau buton).
