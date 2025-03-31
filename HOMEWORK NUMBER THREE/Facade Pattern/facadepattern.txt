@@ -1,1 +1,20 @@
+'Facade Pattern' este un design pattern structural care oferă o interfață simplificată pentru un sistem complex.
+În loc să interacționăm direct cu mai multe clase complicate, folosim o singură "Fațadă" care gestionează totul pentru noi.
 
+
+Când se folosește 'Facade Pattern' ?
+
+✅ Când vrem să ascundem complexitatea unui sistem și să oferim o interfață mai simplă.
+✅ Când vrem să separăm nivelurile unui sistem (Ex: UI <-> Business Logic <-> Database).
+✅ Când lucrăm cu subsisteme complicate (Ex: redare video / audio, baze de date, API-uri externe).
+
+
+
+Exemplu simplu: Sistem Home Theater
+Scenariu: Avem un sistem 'Home Theater' cu mai multe componente (DVD Player, Amplificator, Proiector). În loc să controlăm fiecare componentă separat, creăm o faţadă care gestionează totul cu o singură metodă !
+
+
+Concluzie :
+✔ 'Facade Pattern' ascunde complexitatea unui sistem și oferă o interfață simplificată.
+✔ Se folosește pentru sisteme complexe (ex: baze de date, API-uri, multimedia, interacțiuni hardware).
+✔ Crește modularitatea -> codul devine mai ușor de întreținut.
