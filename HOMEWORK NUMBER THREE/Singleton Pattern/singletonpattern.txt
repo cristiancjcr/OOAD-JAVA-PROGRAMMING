@@ -1,0 +1,35 @@
+Singleton este un pattern de proiectare creațional, utilizat pentru a ne asigura că o clasă are o singură instanță și oferă un punct global de acces la aceasta.
+
+Când se folosește 'Singleton' ?
+
+Singleton este util atunci când avem resurse partajate care trebuie să existe într-o singură instanță în cadrul unei aplicații, cum ar fi:
+✅ Conexiuni la baze de date – evităm crearea de instanțe multiple costisitoare.
+✅ Gestionarea configurărilor – o singură instanță care reține setările aplicației.
+✅ Logger – toate clasele folosesc același mecanism de logare.
+✅ Cache/memory storage – evităm duplicarea datelor în memorie.
+
+
+1. Singleton folosind 'Enum' (cea mai sigură metodă)
+✅ Este thread-safe implicit.
+✅ Evită problemele legate de serializare și reflecție.
+
+De ce e așa de puternic ? 'Enums' în Java sunt garantate de 'JVM - Java Virtual Machine' că vor avea o singură instanță, chiar și în cazul serializării / deserializării.
+
+
+
+2. Problema 'Reflecției' în Singleton (și cum să o evităm)
+🔴 Chiar dacă Singleton are un constructor privat, 'Java Reflection API' îl poate sparge !
+🔹 Soluție: Aruncă o excepție în constructorul privat dacă există deja o instanță.
+
+
+
+3. Singleton în 'Spring Framework'
+În Spring, beans-urile sunt singleton implicit.
+👉 Spring se ocupă de gestionarea instanței, deci nu trebuie să implementăm Singleton manual.
+În Spring Framework, un bean este o componentă reutilizabilă a aplicației, creată și administrată automat de Spring.
+
+
+
+✔ Singleton este util pentru resurse partajate.
+✔ Implementarea simplă NU este thread-safe.
+✔ Enum Singleton este cea mai sigură metodă.
