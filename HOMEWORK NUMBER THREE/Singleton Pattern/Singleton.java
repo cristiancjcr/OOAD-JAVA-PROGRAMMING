@@ -17,3 +17,5 @@ public class Singleton {
         System.out.println("Salut din Singleton!");
     }
 }
+
+// lazy initialization
