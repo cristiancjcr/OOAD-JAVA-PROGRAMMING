@@ -1,4 +1,6 @@
 // Fișier: Singleton.java
+// implementare simplă de 'Singleton' (lazy initialization)
+
 public class Singleton {
     private static Singleton instance; // Instanța unică
 
@@ -15,5 +17,3 @@ public class Singleton {
         System.out.println("Salut din Singleton!");
     }
 }
-
-// implementare simplă de 'Singleton' (lazy initialization)
