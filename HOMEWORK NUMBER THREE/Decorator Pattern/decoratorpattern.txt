@@ -24,3 +24,4 @@ Concluzie :
 ✔ 'Decorator Pattern' permite extinderea funcționalității unui obiect fără a modifica clasa originală.
 ✔ Este mai flexibil decât moștenirea, deoarece putem adăuga sau elimina decoratori dinamic.
 ✔ Se folosește pentru personalizarea produselor, îmbunătățiri dinamice și interfețe grafice (ex: adăugarea de efecte la un text sau buton).
+
