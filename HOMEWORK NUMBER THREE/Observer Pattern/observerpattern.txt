@@ -24,3 +24,4 @@ Concluzie :
 ✔ 'Observer Pattern' ajută la comunicarea eficientă între obiecte fără a crea dependențe puternice.
 ✔ Se folosește pentru sisteme de notificări, interfețe grafice și actualizări în timp real.
 ✔ Permite abonarea / dezabonarea dinamică a observatorilor.
+
