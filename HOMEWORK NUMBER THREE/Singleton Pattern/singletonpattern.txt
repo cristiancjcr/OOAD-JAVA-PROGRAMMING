@@ -1,4 +1,5 @@
-Singleton este un pattern de proiectare creațional, utilizat pentru a ne asigura că o clasă are o singură instanță și oferă un punct global de acces la aceasta.
+'Singleton' este un pattern de proiectare creațional, utilizat pentru a ne asigura că o clasă are o singură instanță și oferă un punct global de acces la aceasta.
+
 
 Când se folosește 'Singleton' ?
 
