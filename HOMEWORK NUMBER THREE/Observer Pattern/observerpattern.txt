@@ -1,1 +1,26 @@
+'Observer Pattern' este un design pattern comportamental folosit pentru a implementa un mecanism de pub-sub (publish-subscribe), 
+în care un obiect (Subject) notifică automat mai multe obiecte dependente (Observers) atunci când starea lui se schimbă.
 
+
+
+Când se folosește 'Observer Pattern' ?
+
+✅ Când avem un obiect principal care trebuie să notifice alte obiecte despre schimbări
+✅ Când vrem să evităm verificări manuale și să folosim un mecanism automat de notificare
+
+Exemple reale :
+🔔 Sistem de notificări (Ex : YouTube - când un canal postează un nou videoclip)
+📩 Evenimente GUI (Ex : butoane care declanșează acțiuni)
+📊 Live data updates (Ex : un dashboard care actualizează datele în timp real)
+
+
+
+Exemplu simplu : Sistem de notificări
+Scenariu: Avem un canal YouTube (Subject) care are mai mulți abonați (Observers). Când canalul postează un nou videoclip, toți abonații sunt notificați.
+
+
+
+Concluzie :
+✔ 'Observer Pattern' ajută la comunicarea eficientă între obiecte fără a crea dependențe puternice.
+✔ Se folosește pentru sisteme de notificări, interfețe grafice și actualizări în timp real.
+✔ Permite abonarea / dezabonarea dinamică a observatorilor.
