@@ -11,3 +11,5 @@ public class Main {
 
 // problema : nu este thread-safe – două thread-uri pot crea instanțe diferite.
 //  soluție: 'Synchronized Singleton' sau 'Enum Singleton'
+
+// lazy initialization
