@@ -9,6 +9,7 @@ Singleton este util atunci când avem resurse partajate care trebuie să existe 
 ✅ Cache/memory storage – evităm duplicarea datelor în memorie.
 
 
+
 1. Singleton folosind 'Enum' (cea mai sigură metodă)
 ✅ Este thread-safe implicit.
 ✅ Evită problemele legate de serializare și reflecție.
@@ -30,6 +31,7 @@ De ce e așa de puternic ? 'Enums' în Java sunt garantate de 'JVM - Java Virtua
 
 
 
+Concluzie :
 ✔ Singleton este util pentru resurse partajate.
 ✔ Implementarea simplă NU este thread-safe.
 ✔ Enum Singleton este cea mai sigură metodă.
