@@ -1,1 +1,26 @@
+Adapter Pattern este un design pattern structural folosit pentru a face două clase incompatibile să funcționeze împreună. Funcționează ca un „translator” între două interfețe diferite.
 
+
+Când se folosește Adapter Pattern ?
+
+✅ Când trebuie să folosim o clasă existentă, dar interfața ei nu este compatibilă cu codul nostru.
+✅ Când vrem să reutilizăm cod vechi fără a-l modifica.
+✅ Când vrem să unificăm mai multe interfețe diferite într-una singură.
+
+
+
+Exemplu simplu : Conversie de prize electrice (adapter între două interfețe diferite)
+Scenariu : Avem o priză europeană și un dispozitiv american. Un adapter va permite dispozitivului american să funcționeze cu priza europeană.
+
+Explicație pas cu pas :
+1️⃣ Interfața 'EuropeanSocket' definește standardul pentru prize europene.
+2️⃣ Clasa 'AmericanDevice' are o metodă diferită ('plugInAmericanSocket()'), incompatibilă cu 'EuropeanSocket'.
+3️⃣ Clasa 'SocketAdapter' implementează 'EuropeanSocket', dar în loc să furnizeze electricitate direct, apelează metoda dispozitivului american ('plugInAmericanSocket()').
+4️⃣ În 'Main.java', creăm un dispozitiv american și un 'SocketAdapter' care îl face compatibil cu priza europeană.
+
+
+
+Concluzie :
+Adapter Pattern ajută la compatibilitatea între clase cu interfețe diferite.
+✔ Se folosește în aplicații unde trebuie să lucrăm cu cod existent, fără a-l modifica.
+✔ Un exemplu real este conversia driverelor hardware pentru a fi compatibile cu un sistem de operare diferit.
