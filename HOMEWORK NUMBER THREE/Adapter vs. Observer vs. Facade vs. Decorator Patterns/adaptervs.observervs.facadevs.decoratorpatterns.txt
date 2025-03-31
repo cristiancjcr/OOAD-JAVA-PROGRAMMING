@@ -95,6 +95,14 @@ Vrei să adaugi funcționalități unui obiect fără a-i modifica codul ? - 'De
 
 
 
+Pe scurt:
+'Adapter' = "Fă ceva compatibil"
+'Observer' = "Anunță automat pe toată lumea"
+'Facade' = "Ascunde complexitatea"
+'Decorator' = "Adaugă funcționalitate din mers"
+
+
+
 Concluzie :
 'Adapter Pattern' - Transformă o interfață într-una compatibilă cu sistemul nostru.
 
