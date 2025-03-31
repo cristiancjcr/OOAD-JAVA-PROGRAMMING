@@ -1,7 +1,7 @@
-Adapter Pattern este un design pattern structural folosit pentru a face două clase incompatibile să funcționeze împreună. Funcționează ca un „translator” între două interfețe diferite.
+'Adapter Pattern' este un design pattern structural folosit pentru a face două clase incompatibile să funcționeze împreună. Funcționează ca un „translator” între două interfețe diferite.
 
 
-Când se folosește Adapter Pattern ?
+Când se folosește 'Adapter Pattern' ?
 
 ✅ Când trebuie să folosim o clasă existentă, dar interfața ei nu este compatibilă cu codul nostru.
 ✅ Când vrem să reutilizăm cod vechi fără a-l modifica.
@@ -21,7 +21,7 @@ Explicație pas cu pas :
 
 
 Concluzie :
-Adapter Pattern ajută la compatibilitatea între clase cu interfețe diferite.
+'Adapter Pattern' ajută la compatibilitatea între clase cu interfețe diferite.
 ✔ Se folosește în aplicații unde trebuie să lucrăm cu cod existent, fără a-l modifica.
 ✔ Un exemplu real este conversia driverelor hardware pentru a fi compatibile cu un sistem de operare diferit.
 
