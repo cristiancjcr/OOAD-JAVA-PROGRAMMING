@@ -1,1 +1,38 @@
+'Builder Pattern' este un design pattern creational care permite construirea unui obiect complex pas cu pas. 
+Acest pattern izolează construcția unui obiect de reprezentarea sa, oferind un mod flexibil de a construi un obiect folosind mai multe etape.
 
+Este util în special atunci când obiectele de construit au multe variabile opționale sau când procesul de creare este complex și implică mai mulți pași.
+
+
+
+Exemplu simplu :
+Să presupunem că dorim să construim un Computer. 
+Un computer poate avea diverse caracteristici opționale (ex: RAM, procesor, hard disk, etc.), iar folosind 'Builder Pattern', putem construi diferite configurații de computere.
+
+
+
+Când să folosești 'Builder Pattern' :
+
+Crearea de obiecte complexe : 
+Dacă un obiect are multe variabile opționale și procesul de creare este complex, 'Builder Pattern' îți permite să creezi obiecte ușor și clar, fără a expune detalii interne.
+
+Construcție flexibilă : 
+Când vrei să ai control complet asupra modului în care construiești un obiect (ex. adăugarea unor opțiuni sau setarea unor valori implicite).
+
+Crearea obiectelor imutabile : 
+'Builder Pattern' este util pentru construirea de obiecte care sunt imutabile după crearea lor. În exemplul nostru, obiectul Computer nu poate fi modificat după ce a fost construit.
+
+Reducerea complexității în instanțierea obiectelor :
+Atunci când instanțierea unui obiect ar necesita mai mulți pași sau parametri, 'Builder Pattern' simplifică codul client și face construcția mai clară.
+
+
+
+Avantaje ale 'Builder Pattern' :
+
+- Claritate și citibilitate : Codul care construiește obiectele devine mai clar și mai ușor de înțeles.
+- Imutabilitate : Obiectele pot fi construite pas cu pas, iar o dată construite nu mai pot fi modificate, ceea ce crește stabilitatea.
+- Flexibilitate : Permite crearea unor instanțe foarte flexibile ale obiectelor, cu opțiuni diverse, fără a afecta constructorii.
+
+
+
+În concluzie, 'Builder Pattern' este un instrument util pentru construirea de obiecte complexe într-un mod flexibil și curat, mai ales atunci când obiectele au multe opțiuni și configurări diferite.
