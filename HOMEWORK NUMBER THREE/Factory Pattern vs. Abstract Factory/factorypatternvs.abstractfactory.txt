@@ -109,3 +109,4 @@ Folosește-l atunci când ai mai multe tipuri de obiecte care aparțin unor fami
 
 Concluzie :
 Ambele patternuri sunt folosite pentru a crea obiecte, dar 'Factory Pattern' este ideal atunci când ai un singur tip de produs, iar 'Abstract Factory' este folosit atunci când trebuie să creezi multiple produse care aparțin unor familii diferite, asigurându-te că sunt compatibile între ele.
+
