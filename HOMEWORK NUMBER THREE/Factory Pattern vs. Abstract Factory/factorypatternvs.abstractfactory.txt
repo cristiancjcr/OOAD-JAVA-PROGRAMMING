@@ -1,1 +1,111 @@
+'Factory Pattern' și 'Abstract Factory Pattern' sunt două design patterns creational care sunt adesea folosite pentru a crea obiecte, însă există diferențe semnificative între ele.
 
+
+
+1. 'Factory Pattern'
+'Factory Pattern' (sau Factory Method) este un design pattern creational care definește o metodă pentru a crea obiecte, dar permite subclass-urilor să decidă ce clasă concretă să instanțieze. 
+Astfel, o clasă care utilizează 'Factory Pattern' nu va crea instanțele obiectelor direct, ci va delega această responsabilitate unei metode sau unei subclase.
+
+
+
+Exemplu :
+Imaginați-vă că aveți o aplicație care gestionează diferite tipuri de Documente.
+
+'Document' este o interfață.
+'PDFDocument' și 'WordDocument' sunt implementări concrete.
+O 'DocumentFactory' este responsabilă pentru crearea documentului.
+
+
+
+Caracteristici 'Factory Pattern' :
+
+Abstracție a creării obiectului : 
+'Factory Pattern' izolează instanțierea obiectelor într-o metodă, reducând dependențele între client și clasele concrete.
+
+Oferă un singur tip de produs : 
+Este folosit atunci când vrem să creăm un singur tip de obiect (de exemplu, doar documente, doar scaune).
+
+Flexibilitate : 
+Permite adăugarea ușoară de noi clase concrete fără a modifica codul client.
+
+
+
+Când să folosești 'Factory Pattern' :
+
+Când ai un singur tip de produs care are mai multe variante și vrei să izolezi logica de creare a acestuia.
+Când vrei să schimbi tipul concret de obiect fără a modifica clientul.
+Când crearea obiectului este complexă și vrei să ascunzi această complexitate.
+
+
+
+
+
+2. 'Abstract Factory Pattern'
+'Abstract Factory Pattern' este o extindere a 'Factory Pattern'. În loc să creeze doar un singur obiect, 'Abstract Factory' creează familii de obiecte interdependente, fără a specifica clasele concrete. 
+Acest pattern se folosește atunci când există mai multe familii de obiecte care trebuie să fie create, iar fiecare familie de obiecte este compusă din mai multe produse diferite.
+
+
+
+Exemplu :
+Imaginați-vă o aplicație care produce mobilier, iar în această aplicație există două stiluri de mobilier: Victorian și Modern. Fiecare stil de mobilier include scaune și canapele.
+
+
+
+Caracteristici 'Abstract Factory Pattern' :
+
+Crearea de familii de obiecte : 
+'Abstract Factory' creează nu doar un obiect, ci întregi familii de obiecte interdependente.
+
+Izolează detaliile implementării : 
+Codul client folosește doar interfețele abstracte pentru a crea obiectele, fără a se preocupa de implementările concrete.
+
+Extensibilitate : 
+Este ușor să adaugi noi familii de produse fără a modifica codul client.
+
+
+
+Când să folosești 'Abstract Factory Pattern' :
+
+Când ai mai multe familii de obiecte care trebuie să fie create (de exemplu, un stil de mobilier Victorian și unul Modern).
+Când produsele dintr-o familie trebuie să fie compatibile între ele.
+Când vrei să schimbi între familii de obiecte (de exemplu, între stiluri de mobilier), dar codul client să nu depindă de clasele concrete.
+
+
+
+
+Diferențe cheie între 'Factory Pattern' și 'Abstract Factory' :
+
+Scop :
+- 'Factory Pattern' : Crearea unui singur tip de obiect.
+- 'Abstract Factory Pattern' : Crearea mai multor tipuri de obiecte interdependente (familii de obiecte).
+
+Produse :
+- 'Factory Pattern' : Crează un singur produs (de exemplu, doar documente).
+- 'Abstract Factory Pattern' : Crează mai multe produse diferite (de exemplu, scaune și canapele) din aceeași familie.
+
+Clasa abstractă:
+- 'Factory Pattern' : Există doar o metodă abstractă de creare a unui produs.
+- 'Abstract Factory Pattern' : Există o interfață abstractă pentru fiecare tip de produs (ex. scaune, canapele).
+
+Exemplu:
+- 'Factory Pattern' : Factory Method pentru crearea unui document (PDF, Word).
+- 'Abstract Factory Pattern' : Abstract Factory pentru crearea unui mobilier (scaune, canapele) în stiluri diferite (Victorian, Modern).
+
+Extensibilitate:
+- 'Factory Pattern' : Ușor de adăugat noi tipuri de produse (ex. tipuri de documente).
+- 'Abstract Factory Pattern' : Ușor de adăugat noi familii de produse (ex. stiluri de mobilier).
+
+
+
+Când să folosești fiecare pattern :
+
+'Factory Pattern' : 
+Folosește-l atunci când vrei să creezi un singur tip de obiect, dar ai nevoie de mai multe variante ale acelui obiect.
+
+'Abstract Factory Pattern' : 
+Folosește-l atunci când ai mai multe tipuri de obiecte care aparțin unor familii diferite și care trebuie să fie create împreună, astfel încât să fie compatibile între ele.
+
+
+
+Concluzie :
+Ambele patternuri sunt folosite pentru a crea obiecte, dar 'Factory Pattern' este ideal atunci când ai un singur tip de produs, iar 'Abstract Factory' este folosit atunci când trebuie să creezi multiple produse care aparțin unor familii diferite, asigurându-te că sunt compatibile între ele.
