@@ -1,1 +1,56 @@
+'Factory Method' este un design pattern creational care este recomandat să fie utilizat în scenarii în care vrem să decuplăm procesul de instanțiere a obiectelor de codul clientului, permițându-le să creeze obiecte într-un mod flexibil și extensibil.
 
+
+
+
+1. Când ai ierarhii de clase complexe
+Dacă ai un sistem cu o ierarhie de clase de obiecte care sunt instanțiate într-un mod specific, dar care se pot schimba în viitor (adăugarea de noi tipuri de obiecte), 'Factory Method' îți permite să creezi instanțe ale acestor clase fără a fi nevoie să modifici codul existent. Codul client nu trebuie să știe ce tipuri de obiecte sunt create, iar instanțierea acestora este delegată subclaselor.
+
+Exemplu :
+Dacă ai un framework de gestionare a documentelor și trebuie să creezi diverse tipuri de documente (PDF, Word, Excel etc.), 'Factory Method' îți permite să adaugi noi tipuri de documente fără a modifica codul existent care lucrează cu documentele.
+
+
+
+2. Când nu vrei ca clientul să depindă de detalii de instanțiere
+Unul dintre principalele avantaje ale 'Factory Method' este separarea logicii de instanțiere de restul aplicației. Codul care utilizează obiectele nu trebuie să știe cum sunt create aceste obiecte, ceea ce reduce dependențele între modulele aplicației. Aceasta este utilă mai ales în aplicațiile mari și complexe, unde modificarea detaliilor de instanțiere poate afecta multe părți ale sistemului.
+
+Exemplu :
+Dacă într-un sistem ai mai multe tipuri de baze de date (MySQL, PostgreSQL, Oracle etc.), poți crea o fabrică de conexiuni care returnează un obiect de tipul corect în funcție de configurările aplicației. Astfel, utilizatorul nu trebuie să știe ce tip de conexiune folosește, iar implementarea poate fi schimbată fără a afecta restul aplicației.
+
+
+
+3. Când ai nevoie de instanțiere flexibilă a obiectelor
+În unele cazuri, ai nevoie să creezi obiecte în funcție de diferite condiții sau configurări. 'Factory Method' permite această flexibilitate, creând instanțe diferite în funcție de parametrii sau de starea aplicației, fără a modifica codul clientului.
+
+Exemplu :
+Dacă aplicația ta trebuie să creeze obiecte de tipuri diferite pe baza unui fișier de configurare sau al unui input de la utilizator, 'Factory Method' poate crea instanțele corecte fără a expune clientului detalii de implementare. Astfel, se pot crea obiecte de diferite tipuri, în mod flexibil, în funcție de condițiile externe.
+
+
+
+4. Când vrei să separi instanțierea de logica aplicației
+Dacă vrei să separi procesul de instanțiere a unui obiect de logica aplicației, acest pattern îți oferă un mod elegant de a face acest lucru. Poți muta logica de instanțiere într-o metodă specializată (Factory Method), astfel încât codul care utilizează obiectul să fie mai curat și mai ușor de întreținut.
+
+Exemplu :
+Într-o aplicație care manipulează diferite tipuri de fișiere (ex: .txt, .csv, .xml), 'Factory Method' poate să fie folosit pentru a crea un obiect care știe cum să proceseze fiecare tip de fișier. Aceasta face codul mai curat și mai ușor de întreținut, întrucât logica de instanțiere este separată într-o metodă dedicată, nu în codul care manipulează fișierele.
+
+
+
+5. Când vrei să facilitezi extensibilitatea aplicației
+Un alt motiv pentru a folosi 'Factory Method' este atunci când dorești să îți faci aplicația mai extensibilă, lăsând loc pentru adăugarea de noi tipuri de obiecte fără a afecta codul existent.
+
+Exemplu :
+Într-o aplicație care generează rapoarte, poate fi necesar să adaugi diverse formate de raport (PDF, Excel, HTML etc.). Folosind 'Factory Method', poți adăuga ușor noi tipuri de rapoarte, creând doar o nouă clasă care implementează metoda 'createReport()' pentru formatul dorit, fără a afecta codul care folosește aceste rapoarte.
+
+
+
+
+Concluzie :
+
+Factory Method este recomandabil atunci când :
+
+- Vrei să îți izolezi logica de instanțiere într-o metodă separată.
+- Ai o ierarhie de clase și vrei să creezi obiecte dintr-o familie de tipuri de obiecte, lăsând subclasele să decidă ce să creeze.
+- Vrei să îți faci aplicația mai extensibilă fără a afecta codul clientului, adăugând noi tipuri de obiecte.
+- Procesul de instanțiere a unui obiect este complex și vrei să îl ascunzi de la client.
+
+Acest pattern oferă flexibilitate, decuplare și ușurință în adăugarea de noi funcționalități, fiind deosebit de util în aplicațiile mari și complexe.
