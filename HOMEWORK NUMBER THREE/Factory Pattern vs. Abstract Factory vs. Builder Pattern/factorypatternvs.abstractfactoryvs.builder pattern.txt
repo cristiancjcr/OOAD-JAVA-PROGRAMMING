@@ -1,1 +1,97 @@
+Aceste trei design patterns sunt creaționale, dar au scopuri și utilizări diferite.
 
+
+
+1. 'Factory Pattern'
+
+Scop : Crearea unui singur obiect, dar permiterea alegerii între diferite variante ale acestuia.
+
+Cum funcționează : 
+'Factory Pattern' izolează procesul de instanțiere a unui obiect într-o metodă (sau clasă), astfel încât clientul nu este direct responsabil pentru instanțierea obiectului, ci doar pentru apelarea unei metode de creare. Această metodă poate returna diferite tipuri de obiecte, în funcție de parametrii sau de logica internă.
+
+Exemplu : 
+Dacă ai o aplicație care gestionează mai multe tipuri de documente (ex. PDF, Word), fiecare tip de document poate fi creat printr-o metodă specifică.
+
+
+Când să folosești :
+
+Când ai un singur tip de obiect cu mai multe variante.
+Când vrei să ascunzi detaliile de instanțiere a unui obiect complex.
+
+
+
+
+2. 'Abstract Factory Pattern'
+Scop: Crearea de familii de obiecte interdependente, fără a expune detalii despre clasele concrete.
+
+Cum funcționează: 
+'Abstract Factory Pattern' se ocupă de crearea unor grupuri de obiecte care aparțin aceleași familii. 
+De exemplu, poate crea un set de obiecte legate între ele, cum ar fi scaune și canapele dintr-un anumit stil (ex. victorian sau modern). În loc să creezi un singur obiect, creezi o întreagă familie de obiecte.
+
+Exemplu: 
+Dacă ai o aplicație care produce mobilier și ai două stiluri de mobilier (victorian și modern), 'Abstract Factory' poate crea scaune și canapele pentru fiecare stil, garantându-se că toate obiectele sunt compatibile între ele.
+
+
+Când să folosești:
+
+Când ai mai multe tipuri de obiecte care aparțin unor familii diferite.
+Când vrei să creezi grupuri de obiecte care trebuie să fie compatibile între ele.
+
+
+
+
+3. 'Builder Pattern'
+Scop: Crearea unui obiect complex pas cu pas, oferind control asupra procesului de construcție.
+
+Cum funcționează: 
+'Builder Pattern' permite construirea unui obiect complex pas cu pas. 
+De obicei, există un builder care poate seta atributele obiectului și poate returna obiectul final. 
+Acest pattern este util atunci când instanțierea unui obiect necesită mai mulți pași, iar acești pași trebuie să fie separați clar.
+
+Exemplu: 
+Să zicem că ai un computer cu multiple caracteristici (CPU, RAM, stocare, etc.) și vrei să construiești diverse configurații ale computerului. 
+Cu 'Builder Pattern', poți să construiești fiecare computer pas cu pas și să controlezi ce caracteristici sunt incluse.
+
+
+Când să folosești:
+
+Când un obiect complex trebuie să fie construit treptat, cu multiple opțiuni sau atribute.
+Când ai nevoie de o instanțiere flexibilă, dar controlată a unui obiect.
+
+
+
+
+Compararea celor trei Patterns
+
+Scopul principal:
+- 'Factory Pattern' : Crearea unui singur tip de obiect, dar cu variate opțiuni (tipuri).
+- 'Abstract Factory Pattern' : Crearea unei familii de obiecte interdependente.
+- 'Builder Pattern' : Crearea unui obiect complex pas cu pas, controlând fiecare detaliu al procesului de construcție.
+
+
+Când să le folosești:
+- 'Factory Pattern' : Când vrei să creezi un singur obiect cu mai multe variante, dar nu vrei ca clientul să știe detaliile de instanțiere.
+- 'Abstract Factory Pattern' : Când ai mai multe tipuri de obiecte care sunt strâns legate și trebuie să fie compatibile între ele.
+- 'Builder Pattern' : Când vrei să construiești un obiect complex cu multe opțiuni sau atribute, într-un mod flexibil și pas cu pas.
+
+Tipuri de obiecte:
+
+- 'Factory Pattern' : Un singur tip de obiect cu variante (de exemplu, documente, vehicule).
+- 'Abstract Factory Pattern' : Mai multe tipuri de obiecte, dar interdependente (de exemplu, scaune și canapele din diverse stiluri).
+- 'Builder Pattern' : Un obiect complex cu multe atribute, dar care poate fi creat treptat (de exemplu, un computer sau o mașină).
+
+
+
+
+Exemple complementare
+
+'Factory Pattern' : O aplicație care creează documente. Poți crea o metodă pentru a crea documente PDF sau Word.
+'Abstract Factory Pattern' : O aplicație de mobilă care creează diverse tipuri de mobilier: scaune și canapele din stiluri diferite (victorian, modern).
+'Builder Pattern' : Crearea unui computer personalizat cu multe opțiuni, cum ar fi CPU, RAM, tipul de stocare etc.
+
+
+
+Concluzie :
+'Factory Pattern' - este ideal atunci când ai un singur tip de obiect, dar diferite variante.
+'Abstract Factory Pattern' - este util atunci când trebuie să creezi o familie de obiecte interdependente.
+'Builder Pattern' - este potrivit atunci când trebuie să construiești un obiect complex pas cu pas, având un control total asupra detaliilor fiecărei etape de construcție.
