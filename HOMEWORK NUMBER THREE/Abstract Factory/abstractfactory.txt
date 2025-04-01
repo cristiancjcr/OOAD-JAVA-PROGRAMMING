@@ -1,1 +1,25 @@
+Explicație simplă :
+'Abstract Factory Pattern' este utilizat atunci când avem mai multe tipuri de produse care fac parte dintr-o familie de produse, iar obiectele din această familie trebuie să fie compatibile între ele. 
+Pattern-ul oferă o interfață comună pentru crearea acestor obiecte, fără a expune clasele concrete.
 
+
+
+'Abstract Factory' este un design pattern creational, care se folosește pentru a crea obiecte din familii de produse, asigurându-se că obiectele din aceleași familii sunt compatibile între ele. 
+În acest caz, avem două familii de produse: mobilier Victorian și Modern.
+
+
+
+Când să folosești 'Abstract Factory Pattern':
+
+Când ai familii de obiecte : 
+Dacă ai mai multe tipuri de produse care trebuie să fie compatibile între ele (de exemplu, scaune și canapele în diferite stiluri), 'Abstract Factory' ajută să le creezi fără a depinde de clasele concrete.
+
+Extensibilitate : 
+Dacă vrei să adaugi noi tipuri de produse sau noi familii de produse, 'Abstract Factory' face acest lucru ușor, fără a modifica codul client.
+
+Izolarea detaliilor de implementare : 
+Codul client nu trebuie să știe cum sunt create produsele, doar să lucreze cu interfețele abstracte.
+
+
+
+'Abstract Factory' este util atunci când ai mai multe grupuri de produse, iar codul client trebuie să poată alege între aceste grupuri, fără a se preocupa de detaliile implementării fiecărei familii de produse.
