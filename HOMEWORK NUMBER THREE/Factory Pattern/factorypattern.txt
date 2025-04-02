@@ -9,17 +9,17 @@ Pattern-urile creational sunt folosite pentru a rezolva probleme legate de crear
 
 
 Crearea de obiecte complexe : 
-Când crearea unui obiect implică mai mulți pași sau necesită parametri complexi, Factory Pattern ajută la centralizarea logicii de instanțiere, făcând codul client mai curat.
+Când crearea unui obiect implică mai mulți pași sau necesită parametri complexi, 'Factory Pattern' ajută la centralizarea logicii de instanțiere, făcând codul client mai curat.
 
 
 
 Când nu știm ce obiecte trebuie create la compilare : 
-Dacă tipul obiectelor depinde de condiții externe (ex. configurație, input utilizator), Factory Pattern ajută să decidă tipul corect de obiect la rulare, fără ca clientul să știe exact ce clase concrete sunt folosite.
+Dacă tipul obiectelor depinde de condiții externe (ex. configurație, input utilizator), 'Factory Pattern' ajută să decidă tipul corect de obiect la rulare, fără ca clientul să știe exact ce clase concrete sunt folosite.
 
 
 
 Extensibilitate : 
-Când vrei să adaugi noi tipuri de obiecte fără să modifici codul existent al clientului. Factory Pattern decuplează crearea obiectelor, permițând adăugarea ușoară a unor noi clase fără schimbarea codului client.
+Când vrei să adaugi noi tipuri de obiecte fără să modifici codul existent al clientului. 'Factory Pattern' decuplează crearea obiectelor, permițând adăugarea ușoară a unor noi clase fără schimbarea codului client.
 
 
 
