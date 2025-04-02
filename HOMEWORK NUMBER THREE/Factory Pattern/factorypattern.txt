@@ -24,7 +24,7 @@ Când vrei să adaugi noi tipuri de obiecte fără să modifici codul existent a
 
 
 În cazul ierarhiilor de clase : 
-Dacă ai o ierarhie de clase și vrei să creezi obiecte ale unor clase derivată fără ca utilizatorul să știe exact ce clasă se folosește, un Factory poate gestiona acest proces.
+Dacă ai o ierarhie de clase și vrei să creezi obiecte ale unor clase derivată fără ca utilizatorul să știe exact ce clasă se folosește, un 'Factory' poate gestiona acest proces.
 
 
 
