@@ -2,9 +2,11 @@ Homework.Java-1.17.
 Rezolvați ecuația ax2+bx+c=0 în toate cazurile folosind clase, null, Exceptii, Excepții Custom.
 
 
+
 Homework.Java-1.18. 
 Creați o Listă de numere întregi si ordonați-o folosind metode și/sau clase predefinite sau un API și afișati lista. 
 Nu scrieți cod pentru a implementa nici una dintre metodele cunoscute de sortare (Quick, bubble, insert etc).
+
 
 
 Homework.Java-1.19. 
@@ -12,8 +14,10 @@ Ordonați o list/vector/etc de Student (atributele nume și notă) după atribut
 Nu scrieți cod pentru a implementa nici una dintre metodele cunoscute de sortare (Quick, bubble, insert etc).
 
 
+
 Homework.Java-1.22. 
 Calculați suma a două numere citite de la tastatură. Folosiți Excepții și NULL.
+
 
 
 Homework.Java-1.24. 
@@ -21,13 +25,15 @@ Considerați un fișier care poate conține numere întregi, float sau șiruri o
 Scrieți o clasă care calculează suma tuturor numerelor întregi din fișier, ignorându-le pe toate celelalte. 
 Tratați excepțiile.
 
+
+
 Homework.Java-1.31.
 Generați 3 de numere aleatoare și scrieți fiecare număr în fișiere diferite, folosind Thread-uri. 
 Cum pot gestiona un număr oarecare de numere aleatoare ?
+
 
 
 Homework.Java-1.32. 
 Creați o listă de string. Folosind stream, filtrați-o și păstrați de string-urile care încep cu “a”, map-ați la uppercase, 
 sortați lista crescător sau descrescător apoi afișați rezultatul. 
 Totul folosind operatorul.
-
