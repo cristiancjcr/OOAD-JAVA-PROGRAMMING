@@ -1,22 +1,22 @@
 Explicație :
 
 Obținerea unei clase dinamic :
-Class.forName("Person") obține obiectul Class asociat clasei Person din timpul execuției.
+Class.forName("Person") obține obiectul 'Class' asociat clasei 'Person' din timpul execuției.
 
 Crearea unui obiect folosind Reflection :
-getConstructor(String.class, int.class).newInstance("John", 30) creează o instanță a clasei Person folosind constructorul care primește un String și un int.
+getConstructor(String.class, int.class).newInstance("John", 30) creează o instanță a clasei 'Person' folosind constructorul care primește un 'String' și un 'int'.
 
 Inspectarea câmpurilor :
-personClass.getDeclaredFields() returnează toate câmpurile (inclusiv cele private) ale clasei Person.
+personClass.getDeclaredFields() returnează toate câmpurile (inclusiv cele private) ale clasei 'Person'.
 
 Invocarea metodei prin Reflection :
-personClass.getMethod("introduce") obține referința la metoda introduce, iar introduceMethod.invoke(person) o invocă pe obiectul person.
+personClass.getMethod("introduce") obține referința la metoda introduce, iar introduceMethod.invoke(person) o invocă pe obiectul 'person'.
 
 Modificarea unui câmp privat :
-nameField.setAccessible(true) permite accesul la câmpurile private. Apoi, folosind nameField.set(person, "Alice"), modificăm valoarea câmpului privat name.
+nameField.setAccessible(true) permite accesul la câmpurile private. Apoi, folosind nameField.set(person, "Alice"), modificăm valoarea câmpului privat 'name'.
 
 Obținerea valorii câmpului folosind metode getter :
-Folosind getMethod("getName") și getMethod("getAge"), obținem metodele getter pentru câmpurile name și age.
+Folosind getMethod("getName") și getMethod("getAge"), obținem metodele getter pentru câmpurile 'name' și 'age'.
 
 
 Ieșirea programului :
@@ -35,7 +35,7 @@ Vârstă obținută prin getter: 30
 
 
 Concluzie :
-În acest exemplu, am folosit Java Reflection pentru a inspecta câmpurile și metodele unei clase (Person), pentru a invoca metode și a modifica câmpuri private dinamic. 
-Reflection este utilă în cazuri în care nu cunoști clasele sau metodele la timpul compilării, ci doar la timpul execuției. 
+În acest exemplu, am folosit 'Java Reflection' pentru a inspecta câmpurile și metodele unei clase (Person), pentru a invoca metode și a modifica câmpuri private dinamic. 
+'Reflection' este utilă în cazuri în care nu cunoști clasele sau metodele la timpul compilării, ci doar la timpul execuției. 
 Este folosită frecvent în framework-uri și librării pentru a adăuga flexibilitate și pentru a facilita interacțiunea cu obiectele într-un mod dinamic.
 
