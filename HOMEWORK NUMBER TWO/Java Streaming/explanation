@@ -1,9 +1,9 @@
 Concluzie:
 
-map este folosit pentru a transforma fiecare element al stream-ului într-o formă nouă.
+'map' este folosit pentru a transforma fiecare element al stream-ului într-o formă nouă.
 
-filter este folosit pentru a păstra doar elementele care îndeplinesc o anumită condiție.
+'filter' este folosit pentru a păstra doar elementele care îndeplinesc o anumită condiție.
 
-sort este folosit pentru a ordona elementele stream-ului.
+'sort' este folosit pentru a ordona elementele stream-ului.
 
-Aceste operații sunt foarte utile atunci când lucrăm cu colecții de date și dorim să le procesăm într-un mod declarativ și eficient folosind Java Streams.
+Aceste operații sunt foarte utile atunci când lucrăm cu colecții de date și dorim să le procesăm într-un mod declarativ și eficient folosind 'Java Streams'.
