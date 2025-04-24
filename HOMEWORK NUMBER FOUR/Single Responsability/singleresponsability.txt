@@ -1,1 +1,47 @@
+Definiție simplă :
+O clasă ar trebui să aibă un singur motiv să se schimbe.
+Asta înseamnă că o clasă ar trebui să aibă o singură responsabilitate clar definită.
 
+
+
+✅ De ce e important ?
+Dacă o clasă face prea multe lucruri, atunci :
+
+- Devine greu de testat.
+- E greu de înțeles.
+- E fragilă: o mică modificare poate strica alte funcționalități.
+- Devine un "god object" – greu de întreținut.
+
+
+
+🎯 Când e recomandabil să aplici `SRP` ?
+- Când o clasă începe să crească prea mult.
+- Când vezi metode care „nu au legătură una cu alta”.
+- Când ai modificări frecvente în aceeași clasă pentru motive diferite (afișare, logică, salvare etc).
+- În aplicații enterprise – cum e în `Spring` – unde fiecare componentă ar trebui să fie specializată (ex: Controller, Service, Repository).
+
+
+
+🔁 "Un motiv să se schimbe" ≠ o singură metodă
+Multă lume crede că dacă o clasă are o singură metodă, deja respectă `SRP`. Dar `SRP` nu se referă la numărul metodelor, ci la numărul motivelor pentru care ar trebui să se modifice codul.
+
+🧠 De exemplu:
+Dacă modifici o clasă pentru a schimba formatul de printare și altă dată pentru a schimba logica de calcul — atunci are 2 responsabilități și `SRP` e încălcat.
+
+
+
+🧱 Ajută la Testare Unitara
+Dacă o clasă face un singur lucru, devine :
+
+- ușor de testat
+- ușor de izolat
+- ușor de "mock-uit" în testele altor clase
+
+
+
+🧠 Cum combini `SRP` cu alte principii ?
+`SRP` se înțelege foarte bine cu alte principii din SOLID:
+
+- cu `Open / Closed Principle` : fiind separate, clasele pot fi extinse fără modificare.
+- cu `Dependency Inversion` : fiecare responsabilitate devine o dependență injectabilă.
+- cu `Interface Segregation` : fiecare responsabilitate își poate avea propria interfață.
