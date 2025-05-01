@@ -37,4 +37,3 @@ Homework.Java-3.8. Use `SOLID` principles to draw a shape.
 Homework.Java-3.9. 
 Define a Shape interface. Extend it to Circle, Square and Rectangle. 
 Use `SOLID` principles to compute the area of couple of different Shape instances.
-
