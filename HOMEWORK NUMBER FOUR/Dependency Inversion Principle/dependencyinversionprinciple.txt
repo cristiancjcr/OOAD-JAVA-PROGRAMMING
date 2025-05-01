@@ -1,1 +1,29 @@
+🎯 Ce este Dependency Inversion Principle (DIP) ?
+
+`DIP` spune că :
+Clasele de nivel înalt nu trebuie să depindă de clasele de nivel jos. Ambele ar trebui să depindă de abstracții.
+
+Cu alte cuvinte, în loc ca un obiect să creeze sau să depindă direct de un alt obiect concret, el ar trebui să lucreze cu o interfață sau clasă abstractă, iar instanțierea reală să se facă în altă parte (de obicei prin injectare de dependență).
+
+
+
+🧱 Structură : Exemplu simplu cu o aplicație de notificări
+Scenariu : Avem o aplicație care trimite notificări prin email sau SMS.
+
+
+
+🧠 Explicație detaliată despre `DIP` și când să-l aplici
+
+✳️ Ce face bine acest exemplu ?
+- `UserNotifier` este clasa de nivel înalt -> ea nu depinde direct de `EmailNotificationService` sau `SMSNotificationService`, ci de interfața `NotificationService`.
+- Clasele concrete (Email/SMS) pot fi modificate sau înlocuite fără a afecta clasa `UserNotifier`.
+
+
+
+📦 Unde se folosește `DIP` în practică?
+Sisteme modulare / extensibile – adaugi noi implementări fără să modifici logica principală.
+
+Testare automată (unit testing) – poți injecta un „mock” al interfeței în locul unei clase reale.
+
+Frameworkuri de tip `Spring` – folosesc „dependency injection” automat pentru a aplica `DIP`.
 
