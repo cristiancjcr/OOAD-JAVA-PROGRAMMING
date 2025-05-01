@@ -1,1 +1,14 @@
+Explicație detaliată despre `ISP` și utilizarea sa :
 
+Principiul `ISP` subliniază că interfețele mari care conțin funcționalități diverse ar trebui împărțite în interfețe mai mici, specifice. 
+Astfel, clasele care implementează interfețele vor implementa doar funcționalitățile relevante pentru ele, fără a fi forțate să implementeze funcționalități inutile.
+
+
+
+
+Când se aplică `ISP` :
+- În aplicații mari și complexe, unde diverse clase au comportamente diferite, iar forțarea implementării unor metode irelevante ar crea probleme de întreținere și teste.
+
+- În testare : `ISP` ajută la reducerea complexității testelor, deoarece fiecare clasă este responsabilă doar pentru un set de comportamente clar delimitate.
+
+- În proiecte cu multe tipuri de obiecte : unde unele clase nu au nevoie de toate metodele dintr-o interfață, dar totuși ar trebui să poată implementa doar ceea ce le este util.
