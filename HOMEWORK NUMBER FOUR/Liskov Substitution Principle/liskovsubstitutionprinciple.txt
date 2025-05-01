@@ -1,1 +1,19 @@
+Explicație detaliată despre `LSP` și utilizarea sa :
 
+Liskov Substitution Principle impune ca orice instanță a unei clase derivate să poată fi înlocuită cu o instanță a clasei de bază fără a afecta corectitudinea programului. 
+Așadar, fiecare clasă derivată trebuie să se comporte așa cum se așteaptă în cadrul aplicației.
+
+Exemplul corect cu `Rectangle` și `Circle` respectă `LSP` deoarece putem înlocui un `Shape` cu un `Rectangle` sau un `Circle` fără a afecta rezultatele aplicației.
+
+Problema cu `Square` arată cum o clasă derivată poate afecta funcționalitatea dacă nu respectă `LSP`. Ar fi mai corect să implementăm `Square` fără să moștenim de la `Rectangle`. 
+Un design mai bun ar presupune să avem o clasă de bază comună `Shape` și clase separate pentru formele geometrice.
+
+
+
+
+Când se aplică `LSP` :
+- În arhitecturi extensibile : dacă vrei să adaugi noi forme geometrice fără să modifici codul existent, respectând principiul `LSP`, vei crea o aplicație scalabilă și ușor de întreținut.
+
+- În testare : `LSP` ajută la testarea ușoară a diferitelor clase derivă prin înlocuirea acestora cu clasele de bază într-un mod sigur.
+
+- În ierarhii de moștenire : dacă planifici o ierarhie de moștenire, trebuie să te asiguri că orice subclasă poate fi folosită în locul clasei de bază fără a modifica comportamentul existent.
